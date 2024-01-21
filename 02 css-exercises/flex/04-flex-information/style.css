@@ -9,6 +9,7 @@ body {
 .flex-container {
   display: flex;
   justify-content: center;
+  gap: 52px;
 }
 
 .flex-items {
@@ -16,6 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-basis: 200px;
 }
 
 img {
