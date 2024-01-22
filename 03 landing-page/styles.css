@@ -104,7 +104,7 @@ body {
     gap: 20px;
     justify-content: space-around;
     margin: 0px 140px;
-    padding: 0;
+    padding: 0 0 80px;
 }
 
 .information-list p {
@@ -122,4 +122,20 @@ body {
     border-radius: 20px;
 }
 
+/* Quote Section */
+.quote-section {
+    background-color: #E5E7EB;
+    padding: 80px 160px;
+}
 
+.quote-section h3 {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 20px;
+}
+
+.quote-section h4 {
+    text-align: right;
+}
