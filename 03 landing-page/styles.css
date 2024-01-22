@@ -139,3 +139,36 @@ body {
 .quote-section h4 {
     text-align: right;
 }
+
+/* CTA Section */
+.cta {
+    display: flex;
+    align-items: center;
+    background-color: #3882F6;
+    width: 800px;
+    border-radius: 4px;
+    padding: 20px 80px;
+    margin: 80px auto;
+    gap: 80px;
+    justify-content: space-between;
+}
+
+.cta h4,
+.cta p {
+    color: #F9FAF8;
+    align-items: center;
+}
+
+.cta button {
+    padding: 8px 80px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: none;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+
