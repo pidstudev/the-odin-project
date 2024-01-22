@@ -1,5 +1,5 @@
 * {
-    /* outline: 1px red dotted; */
+    outline: 1px red dotted;
     padding: 0;
     margin: 0;
 }
@@ -87,6 +87,39 @@ body {
 .left-section {
     margin-right: 60px;
     padding: 100px 0px;
+}
+
+/* Information Section  */
+.information-section h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    padding: 40px;
+}
+
+.information-list ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 0px 140px;
+    padding: 0;
+}
+
+.information-list p {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.rounded-square {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #3882F6;
+    border-radius: 20px;
 }
 
 
