@@ -10,15 +10,15 @@ function game() {
     // console.log("Computer chose: " + getComputerChoice());
     
     function getPlayerChoice() {
-        let playerChoice = "PAPER";
+        let playerChoice = prompt("Enter your choice (rock, paper, or scissors): ");
         playerChoice = playerChoice.toLowerCase();
         return playerChoice;
     }
     // console.log("Player chose: " + getPlayerChoice());
 
     function playRound(computerSelection, playerSelection) {
-        const computer = getComputerChoice();
-        const player = getPlayerChoice();
+        const computer = computerSelection || getComputerChoice();
+        const player = playerSelection || getPlayerChoice();
 
         console.log("Computer chose: " + computer);
         console.log("Player chose: " + player);
@@ -36,7 +36,9 @@ function game() {
         }
 
     }
-    console.log(playRound(computer, player));
+    const computerChoice = getComputerChoice();
+    const playerChoice = getPlayerChoice();
+    console.log(playRound(computerChoice, playerChoice));
 
 }
 
