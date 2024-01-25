@@ -1,3 +1,5 @@
+
+// DOM Manipulation Exercise
 const container = document.querySelector('#container');
 
 
@@ -41,3 +43,45 @@ anotherP.textContent = "ME TOO!";
 borderDiv.appendChild(anotherP);
 
 container.appendChild(borderDiv);
+
+
+
+
+// Event Listener Exercise
+
+// 1st Method
+const btn = document.querySelector('#btn');
+btn.style.padding = '8px 16px'
+btn.onclick = () => alert('Hello World - onclick method');
+
+// 2nd Method - recommended method 
+const btn2 = document.querySelector('#btn2');
+btn2.style.padding = '8px 16px'
+btn2.addEventListener('click', () => {
+    alert('Hello World - addEventListener method');
+})
+
+// Using Named Functions 
+// recommended method if the function is going to be used in multiple places
+const btn3 = document.querySelector('#btn3');
+btn3.style.padding = '8px 16px';
+
+function alertFunction () {
+    alert('Hello World - using named function');
+}
+btn3.addEventListener('click', alertFunction);
+
+// using function (e)
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+  });
+
+
+//   Attaching listeners to groups of nodes 
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
+});
+
