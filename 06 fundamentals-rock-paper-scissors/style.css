@@ -39,5 +39,23 @@ button:hover {
     justify-content: space-evenly;
 }
 
+.output-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 20px;
+}
 
+.rounds-container > h4,
+.score-container > h4 {
+    text-align: center;
+}
+
+.rounds,
+.score {
+    margin: 20px;
+}
+
+.score > div {
+    marigin: 10px;
+}
 
