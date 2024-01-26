@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Local Scripts -->
-    <!-- <script src="index.js"></script> -->
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     </div>
 
     <div class="btn-container">
-        <h4>Let's Play!</h4>
+        <h4>Let's Play! Best of 5</h4>
         <ul class="btn-list">
             <li><button id="rock">Rock</button></li>
             <li><button id="paper">Paper</button></li>
@@ -30,23 +30,20 @@
 
     <div class="output-container">
         <div class="rounds-container">
-            <h4>Rounds</h4>
-            <ol class="rounds">
-                <li>Round 1 : </li>
-                <li>Round 2 : </li>
-                <li>Round 3 : </li>
-                <li>Round 4 : </li>
-                <li>Round 5 : </li>
-            </ol>
+            <h4 id="round-number">Rounds</h4>
+            <ul class="rounds">
+                <li id="pChoice">Player:</li>
+                <li id="cChoice">Computer:</li>
+            </ul>
         </div>
         <div class="score-container">
             <h4>Score</h4>
             <div class="score">
-                <div class="player-score">
-                    Player:
+                <div id="player-score">
+                    Player: 0
                 </div>
-                <div class="computer-score">
-                    Computer:
+                <div id="computer-score">
+                    Computer: 0
                 </div>
             </div>
         </div>

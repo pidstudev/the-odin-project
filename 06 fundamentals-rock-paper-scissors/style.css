@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    outline: 1px red dotted;
+    /* outline: 1px red dotted; */
 }
 
 body {
@@ -55,7 +55,4 @@ button:hover {
     margin: 20px;
 }
 
-.score > div {
-    marigin: 10px;
-}
 
