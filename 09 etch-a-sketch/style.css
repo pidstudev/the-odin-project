@@ -4,8 +4,17 @@
     /* outline: 1px red dotted; */
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .main-container {
-    padding: 50px;
+    /* padding: 20px; */
+    margin-top: 80px;
+    width: 400px;
+    height: 400px;
+    border: 1px solid grey;
 }
 
 .row {
@@ -14,9 +23,8 @@
 }
 
 .square {
-    width: 20px;
-    height: 20px;
-    border: 1px solid rgb(182, 177, 177);
+    /* outline: 1px solid gray; */
+    /* border: 1px solid rgb(182, 177, 177); */
     background-color: initial;
     transition: background-color 0.2s;
 }
