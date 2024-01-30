@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOP Project - Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        TOP Project - Calculator
-    </header>
-    <div class="screen-container">
-        <div id="screen"></div>
+    <header>TOP - Calculator Project</header>
+
+    <div id="calculator">
+        <div id="display">0</div>
+        <div class="first-row">
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="handleOperatorClick('+')">+</button>
+        </div>
+        <div class="second-row">
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="handleOperatorClick('-')">-</button>    
+        </div>
+        <div class="third-row">
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="handleOperatorClick('*')">*</button>
+        </div>
+        <div class="fourth-row">
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="appendDecimal()">.</button>
+            <button onclick="handleEqualsClick()">=</button>
+            <button onclick="setOperator('/')">/</button>
+        </div>
+        <button id="clear-button" onclick="clearDisplay()">Clear</button>
     </div>
-    <div class="btn-container">
-        <div class="btn-row">
-            <button class="calc-btn" id="seven">7</button>
-            <button class="calc-btn" id="eight">8</button>
-            <button class="calc-btn" id="nine">9</button>
-            <button class="calc-btn" id="divide">/</button>
-        </div>
-        <div class="btn-row">
-            <button class="calc-btn" id="four">4</button>
-            <button class="calc-btn" id="five">5</button>
-            <button class="calc-btn" id="six">6</button>
-            <button class="calc-btn" id="multiply">*</button>
-        </div>
-        <div class="btn-row">
-            <button class="calc-btn" id="one">1</button>
-            <button class="calc-btn" id="two">2</button>
-            <button class="calc-btn" id="three">3</button>
-            <button class="calc-btn" id="subtract">-</button>
-        </div>
-        <div class="btn-row">
-            <button class="calc-btn" id="zero">0</button>
-            <button class="calc-btn" id="point">.</button>
-            <button class="calc-btn" id="result">=</button>
-            <button class="calc-btn" id="add">+</button>
-        </div>
-    </div>
-    <footer>
-        &copy; pidstudev 2024
-    </footer>
+
+    <footer>&copy pidstudev 2024</footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
