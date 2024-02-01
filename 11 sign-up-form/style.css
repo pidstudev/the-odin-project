@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    outline: 1px red dotted;
+    /* outline: 1px red dotted; */
 }
 
 body {
@@ -43,7 +43,7 @@ body {
 }
 
 .description-container {
-    padding: 30px 20px;
+    padding: 30px 30px;
     height: 30%;
     background-color: #F5F7F8;
     align-items: center;
@@ -53,4 +53,33 @@ body {
 .description-container > h4 {
     padding-right: 100px;
     padding-top: 40px;
+}
+
+.forms {
+    padding: 10px 30px;
+}
+
+.form-container {
+    display: flex;
+    gap: 100px;
+    padding: 10px 0px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-forms > div,
+.right-forms > div {
+    margin: 10px 0px;
+}
+
+.form-input > label {
+    font-size: 0.65rem;
+}
+
+.form-input > input {
+    outline-color: gray;
+    height: 1.5rem;
 }
