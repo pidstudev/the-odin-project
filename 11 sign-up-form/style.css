@@ -41,3 +41,16 @@ body {
 .right-side-container {
     width: 100%;
 }
+
+.description-container {
+    padding: 30px 20px;
+    height: 30%;
+    background-color: #F5F7F8;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-container > h4 {
+    padding-right: 100px;
+    padding-top: 40px;
+}
