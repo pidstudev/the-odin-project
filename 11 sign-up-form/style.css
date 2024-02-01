@@ -83,3 +83,26 @@ body {
     outline-color: gray;
     height: 1.5rem;
 }
+
+.bottom-section {
+    padding: 0px 30px;
+}
+
+.bottom-section > button {
+    width: 180px;
+    height: 30px;
+    background-color: green;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    color: white;
+    font-weight: 700;
+}
+
+.bottom-section > p {
+    font-size: 0.65rem;
+    padding: 5px 0px;
+}
+
+.bottom-section > p > a {
+    text-decoration: none;
+}
