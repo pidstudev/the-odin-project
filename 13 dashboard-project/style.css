@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 1px blue dotted;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 0.75fr 3.25fr;
+    grid-template-rows: 80px auto;
+    height: 100vh;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar content"
+    ;
+}
+
+.header-container {
+    grid-area: header;
+}
+
+.sidebar-container {
+    grid-area: sidebar;
+}
+
+.content-container {
+    grid-area: content;
+}
