@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: 1px blue dotted;
 }
 
 .container {
@@ -88,4 +89,65 @@
 .footer p {
   font-size: 13px;
   font-weight: normal;
+}
+
+/* solution */
+
+.container {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 4fr;
+  /* grid-template-rows: ; */
+}
+
+/* header section */
+.header {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.logo {
+  justify-self: start;
+}
+
+div.menu {
+  align-self: center;
+}
+
+.menu > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+}
+
+/* sidebar section */
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  display: grid;
+  gap: 50px;
+}
+
+/* navbar section */
+.nav {
+  display: grid;
+}
+
+.nav > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+}
+
+/* article section */
+.article {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* footer section */
+.footer {
+  grid-column: span 2;
 }
