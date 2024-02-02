@@ -4,6 +4,10 @@
     outline: 1px blue dotted;
 }
 
+body {
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: 0.75fr 3.25fr;
@@ -15,14 +19,27 @@
     ;
 }
 
+/* header section */
 .header-container {
     grid-area: header;
 }
 
+/* sidebar section */
 .sidebar-container {
     grid-area: sidebar;
+    background-color: #0ea5e9;
+    color: white;
+    display: grid;
+    /* grid-template-columns: 0.3fr 0.7fr;
+    justify-content: center;
+    align-items: center; */
 }
 
+div > ul {
+    list-style: none;
+}
+
+/* content section */
 .content-container {
     grid-area: content;
 }
