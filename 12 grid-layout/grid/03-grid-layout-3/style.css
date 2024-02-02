@@ -144,7 +144,11 @@ div.menu {
 .article {
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  height: 200px;
 }
 
 /* footer section */
