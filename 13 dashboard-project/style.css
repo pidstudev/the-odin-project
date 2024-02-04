@@ -11,7 +11,7 @@ body {
 .wrapper {
     display: grid;
     grid-template-columns: 0.75fr 3.25fr;
-    grid-template-rows: 80px auto;
+    grid-template-rows: 100px auto;
     height: 100vh;
     grid-template-areas: 
         "sidebar header"
@@ -22,6 +22,7 @@ body {
 /* header section */
 .header-container {
     grid-area: header;
+    /* height: 40vh; */
 }
 
 /* sidebar section */
@@ -30,9 +31,13 @@ body {
     background-color: #0ea5e9;
     color: white;
     display: grid;
-    /* grid-template-columns: 0.3fr 0.7fr;
-    justify-content: center;
-    align-items: center; */
+    width: 200px;
+    padding: 20px;
+}
+
+.material-symbols-outlined {
+    padding: 10px;
+    font-size: 1rem;
 }
 
 div > ul {
