@@ -11,7 +11,7 @@ body {
 .wrapper {
     display: grid;
     grid-template-columns: 0.75fr 3.25fr;
-    grid-template-rows: 100px auto;
+    grid-template-rows: 30% auto;
     height: 100vh;
     grid-template-areas: 
         "sidebar header"
@@ -22,7 +22,85 @@ body {
 /* header section */
 .header-container {
     grid-area: header;
-    /* height: 40vh; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.75fr 1.25fr;
+    grid-template-areas: 
+        "search profile"
+        "name buttons"
+    ;
+    padding: 10px;
+}
+
+.header-container > div > span {
+    align-self: center;
+}
+
+.search-bar {
+    grid-area: search;
+    display: flex;
+    padding: 10px;
+    gap: 40px;
+}
+
+.search-bar-input {
+    align-self: center;
+}
+
+.search-bar > input {
+    width: 70%;
+    border-radius: 8px;
+    border: none;
+    background-color: lightgray;
+    font-size: 18px;
+}
+
+.profile {
+    grid-area: profile;
+    display: flex;
+    justify-content: end;
+    padding: 0px 10px;
+}
+
+.profile > h4 {
+    align-self: center;
+}
+
+#profile-pic-small {
+    font-size: 2rem;
+}
+
+.profile-name {
+    grid-area: name;
+    display: flex;
+}
+
+.profile-name > div {
+    align-self: center;
+}
+
+.profile-name > span {
+    font-size: 4rem;
+}
+
+.profile-buttons {
+    grid-area: buttons;
+    display: flex;
+    align-self: center;
+    justify-content: end;
+    padding: 0px 10px;
+    gap: 10px;
+}
+
+.profile-buttons > button {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #0ea5e9;
+    color: white;
+    font-weight: 700;
 }
 
 /* sidebar section */
