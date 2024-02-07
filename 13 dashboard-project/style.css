@@ -1,11 +1,12 @@
 * {
     padding: 0;
     margin: 0;
-    /* outline: 1px blue dotted; */
+    outline: 1px blue dotted;
 }
 
 body {
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
 }
 
 .wrapper {
@@ -110,8 +111,13 @@ body {
     color: white;
     display: grid;
     width: 200px;
+    height: 100%;
     padding: 20px;
-    gap: 60px;
+    /* gap: 60px; */
+}
+
+.sidebar-container > div {
+    height: auto;
 }
 
 .material-symbols-outlined {
@@ -187,5 +193,40 @@ div.card-4 {
 }
 
 .announcements-trending {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
 
+.announcements > div {
+    padding: 20px;
+    margin-top: 40px;
+    display: grid;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.announcements > div > div > p {
+    font-size: 0.7rem;
+}
+
+.announcements > h4 {
+    height: fit-content;
+}
+
+.trending {
+    display: grid;
+    height: 100px;
+    gap: 10px;
+}
+
+.trending > h4 {
+    height: fit-content;
+}
+
+.trending > div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
