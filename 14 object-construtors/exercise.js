@@ -1,4 +1,4 @@
-const myLibrary = [];
+let myLibrary = [];
 
 function Book(title, author, pages, read) {
     this.title = title;
@@ -17,6 +17,19 @@ function addBookToLibrary(book) {
 
 function isFieldEmpty(value) {
     return value.trim() === '';
+}
+
+function removeBook(title) {
+    myLibrary = myLibrary.filter(book => book.title !== title);
+    displayLibrary();
+}
+
+function toggleReadStatus(title) {
+    const book = myLibrary.find(book => book.title === title);
+    if (book) {
+        book.read = !book.read;
+        displayLibrary();
+    }
 }
 
 function addBook() {
@@ -47,7 +60,31 @@ function displayLibrary() {
 
     myLibrary.forEach(book => {
         const li = document.createElement('li');
-        li.textContent = book.info();
+        const infoSpan = document.createElement('span')
+        infoSpan.textContent = book.info();
+
+        // Create remove button
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.classList.add('remove-button');
+        removeButton.addEventListener('click', () => removeBook(book.title));
+        li.appendChild(removeButton);
+
+        // Create toggle button
+        const toggleButton = document.createElement('button');
+        toggleButton.textContent = book.read ? 'Mark as Unread' : 'Mark as Read';
+        toggleButton.classList.add('toggle-button');
+        toggleButton.dataset.text = toggleButton.textContent;
+        toggleButton.addEventListener('click', () => toggleReadStatus(book.title));
+        li.appendChild(toggleButton);
+
+        const buttonsContainer = document.createElement('div');
+        buttonsContainer.classList.add('buttons-container');
+        buttonsContainer.appendChild(removeButton);
+        buttonsContainer.appendChild(toggleButton);
+
+        li.appendChild(infoSpan);
+        li.appendChild(buttonsContainer);
         libraryList.appendChild(li);
     });
 }
