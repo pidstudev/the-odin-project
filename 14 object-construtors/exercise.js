@@ -25,7 +25,7 @@ function addBook() {
     const pages = document.getElementById('pages').value;
     const read = document.getElementById('read').checked;
 
-    if (isFieldEmpty(title) || isFieldEmpty(author)) {
+    if (isFieldEmpty(title) || isFieldEmpty(author) || isFieldEmpty(pages)) {
         return;
     }
 

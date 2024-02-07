@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP - Project: Library</title>
-    <script src="exercise.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Local CSS -->
     <link rel="stylesheet" href="exercise.css">
+
+    <!-- Local Scripts -->
+    <script src="exercise.js" defer></script>
+
 </head>
 <body>
 
-    <header>The Odin Project - Project: Library</header>
-    <hr>
+    <header>
+        <div>library</div>
+        <div>pidstudev</div>
+    </header>
+    
     <main>
 
-        <button id="add-book-btn">+ Add Book</button>
+        <div class="button-container">
+            <button id="add-book-btn">+ new book</button>
+        </div>
 
         <div class="popup-form" id="popup-form">
 
@@ -31,15 +46,15 @@
                 <br>
                 <div>
                     <label for="pages">Pages</label>
-                    <input type="number" name="pages" id="pages">
+                    <input type="number" name="pages" id="pages" required>
                 </div>
                 <br>
-                <div>
+                <div class="checkbox">
                     <label for="read">Have you read it?</label>
                     <input type="checkbox" name="readStatus" id="read">
                 </div>
                 <br>
-                <button onclick="addBook()">Add Book</button>
+                <button type="submit" onclick="addBook()">Add Book</button>
     
             </form>
 
@@ -47,14 +62,18 @@
 
         <hr>
 
-        <div>
-            <div>Library</div>
+        <div class="library-container">
+            <div class="contents">Contents</div>
             <div>
                 <ul id="library-list">
                     
                 </ul>
             </div>
         </div>
+
+        <footer>
+            <p>&copy pidstudev 2024 for The Odin Project</p>
+        </footer>
 
     </main>
     

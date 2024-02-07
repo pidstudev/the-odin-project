@@ -1,6 +1,54 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    /* outline: 1px blue dotted; */
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 80vw;
+}
+
+/* HEADER SECTION */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+/* ADD BOOK SECTION */
+
+.button-container {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#add-book-btn {
+    border: none;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#add-book-btn:hover {
+    color: white;
+    background-color: rgb(36, 35, 35);
+}
+
+
+/* POPUP FORM SECTION */
 
 .popup-form {
     display: none;
@@ -8,10 +56,86 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: #f9f9f9;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
+
+.popup-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup-form input[type="text"],
+.popup-form input[type="number"],
+.popup-form input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-form input[type="checkbox"] {
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.popup-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* LIBRARY SECTION */
+
+.library-container {
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contents {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px 30px
+}
+
+.library-container > div > ul {
+    list-style: none;
+    padding: 30px;
+}
+
+.library-container > div > ul > li {
+    padding: 5px;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+}
+
