@@ -109,15 +109,16 @@ body {
     grid-area: sidebar;
     background-color: #0ea5e9;
     color: white;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 200px;
     height: 100%;
     padding: 20px;
-    /* gap: 60px; */
+    gap: 60px;
 }
 
 .sidebar-container > div {
-    height: auto;
+    height: fit-content;
 }
 
 .material-symbols-outlined {
