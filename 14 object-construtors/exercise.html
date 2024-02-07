@@ -3,10 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOP - Object Constructors</title>
+    <title>TOP - Project: Library</title>
     <script src="exercise.js" defer></script>
+    <link rel="stylesheet" href="exercise.css">
 </head>
 <body>
+
+    <header>The Odin Project - Project: Library</header>
+    <hr>
+    <main>
+
+        <button id="add-book-btn">+ Add Book</button>
+
+        <div class="popup-form" id="popup-form">
+
+            <form action="" id="book-form">
+
+                <div>
+                    <label for="title">Book Title:</label>
+                    <input type="text" name="title" id="title" required>
+                </div>
+                <br>
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" id="author" required>
+                </div>
+                <br>
+                <div>
+                    <label for="pages">Pages</label>
+                    <input type="number" name="pages" id="pages">
+                </div>
+                <br>
+                <div>
+                    <label for="read">Have you read it?</label>
+                    <input type="checkbox" name="readStatus" id="read">
+                </div>
+                <br>
+                <button onclick="addBook()">Add Book</button>
+    
+            </form>
+
+        </div>
+
+        <hr>
+
+        <div>
+            <div>Library</div>
+            <div>
+                <ul id="library-list">
+                    
+                </ul>
+            </div>
+        </div>
+
+    </main>
     
 </body>
 </html>
