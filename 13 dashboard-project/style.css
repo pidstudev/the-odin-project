@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    outline: 1px blue dotted;
+    /* outline: 1px blue dotted; */
 }
 
 body {
@@ -194,10 +194,9 @@ div.card-4 {
 }
 
 .announcements-trending {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
 }
 
 .announcements > div {
@@ -230,4 +229,8 @@ div.card-4 {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
